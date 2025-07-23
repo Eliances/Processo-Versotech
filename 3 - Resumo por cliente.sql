@@ -2,7 +2,7 @@
 A consulta deve retornar as colunas id, razao_social, total, ordenadas pelo total em ordem descendente.*/
 
 SELECT 	C.id_cliente id,
-		C.razao_social,
+        C.razao_social,
         SUM (P.valor_total) total
 FROM CLIENTES C
 LEFT JOIN PEDIDO P ON C.id_cliente = P.id_Cliente
