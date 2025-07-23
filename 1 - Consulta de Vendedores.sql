@@ -2,7 +2,7 @@
 Ordene o resultado pelo nome em ordem ascendente.*/
 
 SELECT 	V.id_vendedor id,
-		V.nome,
+	    V.nome,
         V.salario 
 FROM VENDEDORES V
 WHERE V.inativo = 'f'
